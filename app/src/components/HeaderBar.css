@@ -46,6 +46,10 @@
   }
 
 .menu-bars {
+    display: none;
+}
+
+.menu-bars-burger {
     margin-left: 1rem;
     display: flex;
     align-items: center;
@@ -53,7 +57,7 @@
     margin-bottom: auto;
     font-size: 2rem;
     background: none;
-    color: #fff;
+    color: #fff;   
 }
 
 .nav-menu {
@@ -63,14 +67,25 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 0;
-    left: -100%;
+    top: 80px;
    transition: 850ms; 
 }
 
-.nav-menu.active {
+.nav-menu-burger.active {
     left: 0;
     transition: 350ms;
+}
+
+.nav-menu-burger {
+    background-color: #4d64f1;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms; 
 }
 
 .nav-text {
@@ -103,6 +118,10 @@
 }
 
 .navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle-burger {
     background-color: #4d64f1;
     width: 100%;
     height: 80px;
